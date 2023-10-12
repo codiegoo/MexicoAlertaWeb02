@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom"
+import { Link } from "react-scroll"
 import './navBar.sass'
 
 export const NavBar = () => {
@@ -8,9 +8,9 @@ export const NavBar = () => {
 
             <img src="/logo.svg" alt="" />
             <ul>
-                <li><Link to="/">Inicio</Link></li>
-                <li><Link to="/Quienes Somos">Nosotros</Link></li>
-                <li><Link to="/contacto">contacto</Link></li>
+                <li><Link to="carouselExampleInterval" smooth={true} duration={500}>Inicio</Link></li>
+                <li><Link to="Nosotros" smooth={true} duration={500}>Nosotros</Link></li>
+                <li><Link to="Contacto" smooth={true} duration={500}>contacto</Link></li>
             </ul>
         </nav>
     )

@@ -11,6 +11,280 @@
     -moz-osx-font-smoothing: grayscale
     -webkit-text-size-adjust: 100%
 
+html
+    scroll-behavior: smooth
+
 body
     margin: 0
     padding: 0
+
+
+//responsive desing
+
+@media screen and (max-width: 1260px)
+    .carousel
+        .cardsPresentationContain
+            .card
+                img
+                    width: 20%
+                .textCardPresent
+                    padding: 0
+
+@media screen and (max-width: 1135px)
+    .carousel
+        .sliderImgText
+            bottom: 13rem !important
+        .cardsPresentationContain
+            .card
+                .textCardPresent
+                    padding: 0
+
+
+@media screen and (max-width: 1065px)
+    .carousel
+        .cardsPresentationContain
+            width: 95%
+            left: 2rem
+            gap: 1rem
+    .nosotrosContain
+        width: 90%
+    .carousel
+        .sliderImgText
+            bottom: 11rem !important
+    .nosotrosCardsContain
+        gap: 1rem
+        width: 90%
+    footer
+        margin: 0 4rem
+
+
+
+@media screen and (max-width: 965px)
+    .carousel
+        .sliderImgText
+            .logoSlider
+                img
+                    width: 10rem !important
+            .titleSlider
+                h2
+                    font-size: 1.5rem !important
+            .subTitleSlider
+                p
+                    font-size: 1.3rem !important
+        .cardsPresentationContain
+            left: 1rem
+            .card
+                height: 19.5rem
+                .textCardPresent
+                    h3
+                        font-size: 1.3 !important
+                    p
+                        font-size: .8rem
+    .nosotrosCardsContain
+        .cardContain
+            p
+                font-size: .8rem
+                line-height: 1rem
+    .nosotrosContain
+        .imgNosotros
+            img
+                width: 25rem
+
+@media screen and (max-width: 865px)
+    .nosotrosContain
+        margin: 30% auto auto auto
+        .nosotrosTitle
+            h4
+                font-size: 1.5rem
+        .textNosotros
+            h5
+                font-size: 1.3rem
+            p
+                font-size: .8rem
+    .contactMeLayout
+        grid-row-gap: 5rem
+        grid-column-gap: 3rem
+    .formInfoContain
+        h6
+            font-size: 1.5rem !important
+        form
+            padding: 1rem
+            label
+                font-size: .8rem
+            .buttonContain
+                button
+                    margin-top: 0
+                    font-size: .8rem
+    .infoContain
+        .storeInfoContain
+            .subtitleInfo
+                h6
+                    font-size: 1.5rem
+
+@media screen and (max-width: 765px)
+    .carousel
+        .cardsPresentationContain
+            width: 100%
+            left: 0
+            .card
+                .textCardPresent
+                    height: 55%
+    .nosotrosContain
+        margin-top: 15rem
+        grid-template-columns: 1fr
+        grid-template-rows: .5fr 1fr 1fr
+        gap: 0
+        text-align: center
+        .nosotrosTitle
+            grid-column: 1/2
+            grid-row: 1/2
+        .textNosotros
+            grid-row: 3/4
+    .nosotrosCardsContain
+        margin: 0rem auto auto auto
+    footer
+        .redesContain
+            img
+                width: 5rem
+            p
+                font-size: .8rem
+        .logoContain
+            img
+                width: 5rem
+
+
+@media screen and (max-width: 690px)
+    .carousel
+        .sliderImgText
+            bottom: 40% !important
+            .titleSlider
+                h2
+                    font-size: 1.2rem !important
+            .logoSlider
+                img
+                    width: 7rem !important
+            .subTitleSlider
+                p
+                    font-size: 1rem !important
+        .carousel-inner
+            height: 100vh
+            .carousel-item
+                img
+                    height: 100vh
+        .cardsPresentationContain
+            flex-direction: column
+            align-items: center
+            .card
+                width: 80%
+                img
+                    width: 12%
+                .textCardPresent
+                    display: flex
+                    flex-direction: column
+                    justify-content: center
+    .nosotrosContain
+        margin-top: 55rem
+        .imgNosotros
+            img
+                width: 100%
+                height: 20rem
+    .nosotrosCardsContain
+        grid-template-columns: 1fr
+        grid-template-rows: repeat(3, 1fr)
+        height: 70rem
+        gap: 0
+        .cardContain
+            .card
+                .nosotrosImgCardContain
+                    .imgCard1
+                        width: 11vh
+                    .imgCard2
+                        width: 30vh
+                    .imgCard3
+                        width: 25vh
+    .contactMeLayout
+        margin-top: 15rem
+
+
+@media screen and (max-width: 565px)
+    .carousel
+        .sliderImgText
+            flex-direction: column !important
+            left: 5rem
+            .logoSlider
+                justify-content: center
+            .subTitleSlider
+                width: 150%
+                justify-content: flex-end
+    .contactMeLayout
+        grid-row-gap: 3rem
+        grid-column-gap: 1rem
+        grid-template-columns: 1fr
+        grid-auto-columns: 1fr 0.5fr 0.4fr
+        .staticSliderContain
+            justify-content: center
+            grid-column: 2/-3
+        .infoContain
+            grid-column: 2/-3
+            padding: 0
+            .infoTextContain
+                justify-content: center
+        .formInfoContain
+            grid-row: 2/3
+            grid-column: 2/-3
+            display: flex
+            flex-direction: column
+            align-items: center
+            margin-top: 2rem
+    footer
+        margin:0 2rem
+        .redesContain
+            img
+                width: 3rem
+            p
+                font-size: .5rem
+        .logoContain
+            img
+                width: 3rem
+    .footerLine
+        margin-top: 0 !important
+    nav
+        padding: 0% 5% 0% 5%
+        img
+            width: 2.5rem
+        ul
+            li
+                padding: .5rem
+
+
+
+@media screen and (max-width: 450px)
+    .carousel
+        .sliderImgText
+            left: 2rem
+
+@media screen and (max-width: 385px)
+    .carousel
+        .sliderImgText
+            left: 5rem
+            align-items: center
+            .logoSlider
+                img
+                    width: 5rem !important
+            .subTitleSlider
+                width: 100%
+
+
+@media screen and (max-width: 365px)
+    .nosotrosContain
+        .imgNosotros
+            img
+                width: 17rem
+    .carousel
+        .sliderImgText
+            left: 4rem
+
+@media screen and (max-width: 325px)
+    .carousel
+        .sliderImgText
+            left: 3rem
